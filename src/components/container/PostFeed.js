@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Post } from "../presentation";
 
-import { FlatList } from "react-native";
+import { FlatList, Text } from "react-native";
 
 class PostFeed extends Component {
   _renderPost({ item }) {
-    return <Post item={item}/>;
+    return <Post item={item} />;
   }
 
   _returnKey(item) {
